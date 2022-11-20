@@ -1,0 +1,31 @@
+:root {
+  --transition: 0.2;
+  --bg-one: #0f0514;
+  --bg-two: #320449;
+  --stop: 40;
+  --angle: 45;
+  --border-width: 5;
+  --padlock-size: 300;
+  --border-radius: 6;
+}
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: linear-gradient(calc(var(--angle) * 1deg), var(--bg-one) calc(var(--stop) * 1%), var(--bg-two) calc(var(--stop) * 1%));
+}
+form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0.5rem 1rem;
+  justify-items: center;
+  position: relative;
+}
+
+label{
+    color: #f2f2f2;
+    white-space: nowrap;
+    margin-left: 17px;
+}
