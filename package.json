@@ -1,0 +1,21 @@
+{
+  "name": "unitjsTeste",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "teste.mjs",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "babel js/teste.mjs -d dist",
+    "testar": "npm run build && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "jest": "^29.3.1"
+  }
+}
